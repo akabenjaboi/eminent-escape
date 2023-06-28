@@ -1,0 +1,16 @@
+---
+const { color } = Astro.props;
+const textColor = `text-${color}`;
+
+import Layout from "../layouts/Layout.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import MusicSection from "../components/MusicSection.astro";
+---
+
+<Layout title="eklipse999">
+	<LandingHeader />
+	<main>
+		<MusicSection 
+		color = "black"/>
+	</main>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import Section from "./Section.astro"
+---
+<Section 
+    title="Holaaa"
+    subtitle ="soy un subtitulo"
+    color="white">
+    <div slot="footer">
+        <a
+            class="border-[3px] m-2 border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+            href="https://www.youtube.com/watch?v=xg9XdpIyFPs&ab_channel=G.R.O.Sellas"
+        >
+            Explorar inventario</a
+        >
+        <a
+            class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+            href="https://www.youtube.com/watch?v=JDXfqN3VKhc&ab_channel=squewe"
+        >
+            Explorar inventario</a
+        >
+    </div>
+        <video 
+            slot="background"
+            class="video object-center object-cover h-full w-full"
+            autoplay
+            muted
+            loop
+            src="/hell.mp4"></video>
+</section>

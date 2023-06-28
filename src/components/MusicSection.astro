@@ -1,0 +1,37 @@
+---
+const { color } = Astro.props;
+const textColor = `text-${color}`;
+---
+
+<section class="landing-section mt-24" data-header-color={color}>
+    <div class="flex justify-center">
+        <iframe
+            style="border-radius: 12px;"
+            src="https://open.spotify.com/embed/playlist/0mOgIYRcBas1PcNUuTdnQ2?utm_source=generator&theme=0"
+            width="90%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+    </div>
+    <article class="text-justify m-8 md:mx-24 {`${textColor}">
+        ke corte le da uste cn esa faldaaa, primera pagina q hago x aburrido y
+        creoq esta quedando bnnnn m ha costado un poco pero mgta caleta la parte
+        del diseño ylawea, aqui se supone q iba a poner musicaa pero chrome no
+        deja reproducir audio apenas entrai a una pagina, supongo pq pueden ser
+        gemi2 q seyo asi qqq puse la playlist q hice ayer cndo la mariel m dejo
+        esperando 2 años <br />
+        ayerfinalmente hubo buen tiempooO
+    </article>     
+    <div class="grid grid-cols-1 m-8 gap-4 justify-center md:grid-cols-3">
+        <img src="/luna.jpeg" alt="luna"/>
+        <img src="/peo.jpeg" alt="kiensoi" />
+        <video controls>
+            <source src="/marielDubstep.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</section>
+
